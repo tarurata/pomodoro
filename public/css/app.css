@@ -11356,3 +11356,11 @@ a.text-dark:focus {
   }
 }
 
+body {
+  padding-top: 70px;
+}
+
+.navbar__white {
+  color: white;
+}
+
