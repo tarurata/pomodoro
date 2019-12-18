@@ -14,6 +14,10 @@
         <div id="app">
             <timer-component></timer-component>
         </div>
+
+        <a href="/auth/twitter">ログイン</a>
+        <a href="/auth/twitter/logout">ログアウト</a>
+
     <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>

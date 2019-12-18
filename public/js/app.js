@@ -1888,13 +1888,13 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       // 初期値、本番時は20分にする
-      defaultMin: 0,
-      defaultSec: 3,
-      defaultBreakMin: 0,
-      defaultBreakSec: 4,
+      defaultMin: 20,
+      defaultSec: 0,
+      defaultBreakMin: 5,
+      defaultBreakSec: 0,
       defaultRepeatCount: 3,
-      min: 0,
-      sec: 3,
+      min: 20,
+      sec: 0,
       repeatCount: 3,
       strDisplayBreak: '',
       timerOn: false,
@@ -1908,18 +1908,21 @@ __webpack_require__.r(__webpack_exports__);
         this.sec = 59;
       } else if (this.sec <= 0 && this.min <= 0) {
         // 繰り返しカウント
-        if (this.repeatCount === 1) {
-          this.repeatCount = 0;
-          this.min = this.defaultBreakMin;
-          this.sec = this.defaultBreakSec; //this.complete();
-        } else if (this.repeatCount > 1) {
+        if (this.repeatCount > 1) {
           this.repeatCount--;
           this.min = this.defaultMin;
           this.sec = this.defaultSec;
+          this.strDisplayBreak = '';
+        } else if (this.repeatCount === 1) {
+          this.repeatCount--;
+          this.min = this.defaultBreakMin;
+          this.sec = this.defaultBreakSec;
+          this.strDisplayBreak = '(つ∀-)ｵﾔｽﾐｰ'; //this.complete();
         } else if (this.repeatCount === 0) {
           this.repeatCount = this.defaultRepeatCount;
           this.min = this.defaultMin;
           this.sec = this.defaultSec;
+          this.strDisplayBreak = '';
         }
       } else {
         this.sec--;
