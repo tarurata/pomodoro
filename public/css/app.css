@@ -11357,10 +11357,35 @@ a.text-dark:focus {
 }
 
 body {
-  padding-top: 70px;
+  margin: 0;
+  padding: 0;
+  background: url(/images/tomatoes-5356_1280.jpg?4069046794cca2e2a658ac09390145a9);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.navbar__white {
-  color: white;
+.body__container {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 800px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.todo__item {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo__item:hover {
+  box-shadow: 0 2px 2px 0;
+}
+
+.todo__input {
+  border-radius: 1rem;
+}
+
+.navbar__btn {
+  background-color: green;
+  border-color: green;
 }
 

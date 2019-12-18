@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
-    <a class="navbar-brand  font-weight-bold text-uppercase" href="#">Pomodoro</a>
+    <a class="navbar-brand  font-weight-bold text-uppercase" href="/">Pomodoro</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,8 +19,8 @@
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="btn btn-dark" href="/register">Sign up</a>
-                <a class="btn btn-dark" href="/login">Log in</a>
+                <a class="btn btn-success navbar__btn" href="/register">Sign up</a>
+                <a class="btn btn-success navbar__btn" href="/login">Log in</a>
             </li>
         </ul>
     </div>
